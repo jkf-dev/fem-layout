@@ -23,7 +23,7 @@ Example: row wrap, row-reverse wrap, column nowrap, column-reverse wrap-reverse,
 Just because the row/column is reversed does not mean the wrap has to be reversed
 
 5. ul { display: flex; flex-flow: row wrap; justify-content: ***; }
-*** can equal flex-start, flex-end, center, space-between, space-around
+*** can equal [flex-start], flex-end, center, space-between, space-around
 Justify content determines the distribution of the flex-items within the flex-container on the main axis — in other words, how should space be allocated relative to the width of each item?
 If flex-direction is row, then horizontal is the main axis. When flex-direction is column, then column is the main axis.
 

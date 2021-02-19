@@ -6,12 +6,30 @@ ul {
 	padding: 0;
 	margin: 0;
 	border: 1px dotted red;
+	display: flex;
+	flex-flow: row wrap;											/* flex-flow is shorthand for flex-direction and flex-wrap */
+	justify-content: center;  /* space-around - space on two sides; space-between - space on one side */
+	align-items: stretch;				/* stretch - vertical; applies to the children */
 }
+
+/* children - ordering and how wide they are; and how they change their size over dimensions */
+
 li {
 	border: 1px solid #999;
 	margin: 0.5em;
 	padding: 0.5em;
 }
+
+/* do not use `width` with flex-items; use flex-basis */
+/* default order: 1 */
+
+.flex2 {
+	border: 5px dashed blue;
+	order: 2;			/* order is a number; default is `order:1` */
+	flex: 2 1 25%;			/* flex: grow shrink flex-basis; */
+}
+
+/* default: grow - 0, shrink - 1, flex-basis: auto; */
 
 
 
