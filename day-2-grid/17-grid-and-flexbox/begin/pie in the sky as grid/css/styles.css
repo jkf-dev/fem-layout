@@ -59,12 +59,29 @@ nav a:hover {
   color:#00c4c7;
 }
 
-.content {
+/* add gallery class */
+.content,
+.gallery {
   background-color: #fff6e0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 2em;
 }
+.gallery ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-flow: row wrap;
+}
+.gallery li {
+  flex: auto;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .floatleft {
   float: left;
   margin: 0 1em 1em 0;
@@ -128,6 +145,7 @@ footer a {
   color: white;
   text-decoration: none;
 }
+
 /* grid system */
 
 
